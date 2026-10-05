@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Your Name | Portfolio</title>
+<style>
+  html { scroll-behavior: smooth; scroll-padding-top: 90px; }
+  body {
+    margin: 0;
+    font-family: system-ui, sans-serif;
+    line-height: 1.8;
+    color: #1f2933;
+    background: #eaf2fb;
+  }
+
+  /* Top buttons */
+  nav {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    padding: 16px 20px;
+    background: rgba(255, 255, 255, 0.92);
+    backdrop-filter: blur(6px);
+    box-shadow: 0 2px 10px rgba(0, 60, 120, 0.1);
+  }
+  nav a {
+    padding: 10px 22px;
+    border-radius: 999px;
+    background: #00599c;
+    color: #fff;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background 0.2s, transform 0.2s;
+  }
+  nav a:hover { background: #4f46e5; transform: translateY(-2px); }
+  nav a:focus-visible { outline: 3px solid #4f46e5; outline-offset: 3px; }
+
+  /* Header */
+  header {
+    background: linear-gradient(135deg, #00599c, #4f46e5);
+    color: #fff;
+    text-align: center;
+    padding: 110px 20px 130px;
+  }
+  header h1 { margin: 0; font-size: 2.8rem; }
+  header p { margin: 14px 0 0; font-size: 1.15rem; opacity: 0.9; }
+
+  /* Sections */
+  main {
+    max-width: 680px;
+    margin: -50px auto 60px;
+    padding: 0 20px;
+  }
+  section {
+    background: #fff;
+    border-radius: 12px;
+    border-left: 5px solid #00599c;
+    padding: 32px 36px;
+    margin-bottom: 40px;
+    box-shadow: 0 2px 10px rgba(0, 60, 120, 0.08);
+  }
+  section:nth-child(even) { border-left-color: #4f46e5; }
+  h2 { margin: 0 0 14px; font-size: 1.3rem; color: #00599c; }
+  p, ul { margin: 0; }
+  ul { padding-left: 22px; }
+  li { margin-bottom: 6px; }
+  a.link { color: #4f46e5; font-weight: 600; text-decoration: none; }
+  a.link:hover { text-decoration: underline; }
+
+  footer { text-align: center; color: #5b6b7c; padding: 10px 0 50px; font-size: 0.9rem; }
+
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    nav a { transition: none; }
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="#about">About Me</a>
+  <a href="#learning">Learning</a>
+  <a href="#projects">Projects</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<header>
+  <h1>Daksh Pratap Singh</h1>
+  <p>CSE-AI student learning C++</p>
+</header>
+
+<main>
+  <section id="about">
+    <h2>About Me</h2>
+    <p>I'm studying Computer Science and Engineering with a focus on AI. I'm learning C++ to understand how programs work and to build a strong base for my future projects.</p>
+  </section>
+
+  <section id="learning">
+    <h2>Learning</h2>
+    <ul>
+      <li>Variables, loops and functions</li>
+      <li>Arrays, strings and vectors</li>
+      <li>Pointers and classes (in progress)</li>
+    </ul>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <ul>
+      <li>Number Guessing Game</li>
+      <li>Student Record Manager</li>
+    </ul>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p><a class="link" href="mailto:dakshpratap967@gmail.com">dakshpratap967@gmail.com</a> · <a class="link" href="https://github.com/dakshpratap967">GitHub</a></p>
+  </section>
+</main>
+
+<footer>Built by Daksh Pratap Singh</footer>
+
+</body>
+</html>
